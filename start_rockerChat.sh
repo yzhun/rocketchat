@@ -1,4 +1,6 @@
-docker-compose up -d mongo
+DC_PATH=$('/usr/bin/which docker-compose')
+echo $DC_PATH
+$DC_PATH/docker-compose up -d mongo
 sleep 10s
-docker-compose up -d mongo-init-replica
-docker-compose up -d rocketchat
+$DC_PATH/docker-compose up -d mongo-init-replica
+$DC_PATH/docker-compose up -d rocketchat
