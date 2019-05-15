@@ -10,7 +10,7 @@ services:
     environment:
       - PORT=3000
 #      - ROOT_URL=http://localhost:3000
-      - ROOT_URL=rocketchat.synapse.com
+      - ROOT_URL==http://rocketchat.synapse.com
       - MONGO_URL=mongodb://mongo:27017/rocketchat
       - MONGO_OPLOG_URL=mongodb://mongo:27017/local
       - MAIL_URL=smtp://smtp.email
